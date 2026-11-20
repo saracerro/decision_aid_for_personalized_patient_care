@@ -21,15 +21,10 @@ The weaning dataset contains ICU time-series measurements (heart rate, respirato
 # Repository Structure
 ```text
 DAPPC-LAB/
-├── labs/
-│   ├── lab01/             # EDA — MATLAB script + lab specs + bar/box plots with comparative figures
-│   ├── lab02/             # SOM + k-means clustering with quality metrics
-│   ├── lab03/             # ACO feature selection
-│   └── lab04/             # Fuzzy Inference System design
+│   ├── lab 1/             # MATLAB script clustering e knn + lab 1 specs + graphics bar/box plots with comparative figures
+│   ├── lab 2/             # SOM + k-means clustering with quality metrics + lab 2 specs
+│   ├── lab 3/             # ACO feature selection script matlab + classifier and results
+│   └── lab 4/             # Fuzzy Inference System design
 ├── data/
 │   └── dataset_weaning_final.xlsx   # ICU weaning dataset
-├── results/
-│   ├── centroids/         # Cluster centroids (.mat)
-│   └── clusters/          # Cluster assignments per patient (.mat)
-└── reports/               # Group reports (PDF + PPTX)
 ```
