@@ -21,7 +21,7 @@ clc
 %% Dataset Loading
 
 % Specify the path of the Excel sheet
-path = '/Users/antonellaalbanese/Library/CloudStorage/OneDrive-PolitecnicodiTorino/DAPPC/dataset_weaning_prova.xlsx';
+path = '.../dataset_weaning_prova.xlsx';
 % Read the Excel sheet
 dataset = readtable(path, 'Sheet', "DATASET_V1");
 fprintf('Original dataset: %d rows, %d columns. Total missing values: %d \n', size(dataset,1), size(dataset,2), sum(ismissing(dataset),"all"));
@@ -130,12 +130,6 @@ for p = 1:size(missingIndices, 1)
         end
     end
 end
-
-
-
-% IMPUTARE = FARE LA MEDIA DELLE FEATURE DEI PAZIENTI APPARTENTENI AL
-% CLUSTER A CUI è STATO ASSEGNATO
-
 
 % Helpful functions: 
 % - linkage: Compute the agglomerative hierarchical cluster tree
