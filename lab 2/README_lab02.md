@@ -29,12 +29,16 @@ Implementation of **Self-Organizing Maps (SOMs)** combined with agglomerative hi
 ### Execution
 1. Place `dataset_weaning.xlsx` (containing the sheets from Lab 01) and `plot_som_clusters.m` in the working folder[cite: 13, 18, 19].
 2. Select `sheetName` at the top of `LAB02_SOM_Clustering.m` (`DATASET_Step3a`, `DATASET_Step3b`, `DATASET_Step3c`, or `DATASET_Step3d`)[cite: 13, 18].
-3. Run `LAB02_SOM_Clustering.m` to generate dendrograms, SOM cluster plots, `.mat` cluster files, and ICV/ICD metrics[cite: 13, 18].
+3. Run `LAB02_SOM_Clustering.m` to generate dendrograms, SOM maps, cluster assignments, and ICV/ICD metrics[cite: 13, 18].
 
 ---
 
-## 📌 Outputs
+## 📌 Outputs (Per SOM Size & Neighborhood)
 
-- **Figures (`.png`):** Dendrograms (`Dendrogram_*.png`) and SOM hit/cluster maps (`SOM_Clusters_*.png`)[cite: 13, 18, 19].
-- **Data (`.mat`):** Trained SOM networks (`SelfOrgMap_*.mat`) and patient cluster assignments (`PatientClusters_*.mat`)[cite: 13, 18].
-- **Metrics:** Intra-Cluster Variance (`max_ICV`) and Inter-Cluster Distance (`min_ICD`)[cite: 13].
+For each SOM grid size ($n = 10 \dots 15$) and neighborhood setting (`initNeighbor` $= 1, 2$)[cite: 13, 17, 18]:
+- **Dendrogram:** Hierarchical clustering tree on SOM neuron weights[cite: 13, 18].
+- **Colored Dendrogram:** Dendrogram with color-coded cluster cut threshold[cite: 13, 18].
+- **SOM Hits:** Sample hits visualization across the SOM grid (`plotsomhits`)[cite: 13, 18].
+- **SOM Clusters (A):** Hexagonal SOM grid colored by neuron cluster assignment (`plot_som_clusters`)[cite: 13, 18, 19].
+- **SOM Patient Clusters (A):** Patient-to-cluster assignments (`patient_clusters`) derived from winning neurons (`vec2ind`)[cite: 13, 18].
+- **Cluster Evaluation Metrics:** Intra-Cluster Variance (`max_ICV`) and Inter-Cluster Distance (`min_ICD`)[cite: 13].
