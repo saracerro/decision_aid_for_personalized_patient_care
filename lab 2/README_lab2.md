@@ -23,8 +23,6 @@ Identification of homogeneous patient groups on the imputed datasets from **Lab 
 
 ### Files Not Used in the Lab 02 SOM Pipeline
 - `ACO_FS.m`, `objectiveFunction.m`, `createHoldOutIndex.m`: Feature selection (Ant Colony Optimization) and hold-out kNN evaluation utilities not invoked by the SOM scripts[cite: 20, 21, 29].
-- `plot_hex_grid.m`: Alternative hexagonal grid plot function displaying cluster numbers inside each cell[cite: 30].
-- `plot_som_clusters_2.m`, `LAB02_2.m`, `LAB02-MacBook Air di Antonella.m`, `DAPPC 24-25 Introduction to LAB2_2.pdf`: Duplicate or local-path variants not needed as standalone active files[cite: 13, 19, 22, 26, 31].
 
 ---
 
